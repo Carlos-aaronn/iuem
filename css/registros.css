@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../img/5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact_form {
+  width: 90%;
+  max-width: 460px;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding: 30px;
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact_form h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact_form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact_form input, .contact_form textarea {
+  width: calc(100% - 20px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  transition: border 0.3s ease;
+}
+
+.contact_form input:focus, .contact_form textarea:focus {
+  outline: none;
+  border: 2px solid #ffffff;
+}
+
+.contact_form input::placeholder, .contact_form textarea::placeholder {
+  color: #d1d1d1;
+}
+
+.contact_form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.button_container {
+  text-align: center; /* Centra el botón horizontalmente */
+}
+
+.contact_form button {
+  width: 100%; /* Ajusta el ancho del botón */
+  height: 50px;
+  border-radius: 25px;
+  background-color: #007BFF; /* Color azul profesional */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añadir sombra para dar profundidad */
+  margin: 20px 0; /* Espaciado superior e inferior para el botón */
+}
+
+.contact_form button:hover {
+  background-color: #0056b3; /* Color azul más oscuro en hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+.contact_form button:active {
+  background-color: #003f7f; /* Color más oscuro en active */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más ligera en active */
+}
+
+.contact_form .aviso {
+  font-size: 0.9rem;
+  color: #d1d1d1;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact_form a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact_form a:hover {
+  color: #0056b3;
+}
